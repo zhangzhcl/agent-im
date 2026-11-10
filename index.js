@@ -1,0 +1,16 @@
+export { OmniGateway } from './src/gateway.js';
+export { resolveConfig, GatewayConfigError } from './src/config.js';
+export { ConversationVault } from './src/router/conversation-vault.js';
+export { MessageDebouncerQueue } from './src/router/debouncer.js';
+export { CommandDispatcher } from './src/commands/command-parser.js';
+export { MediaHub, MediaHubError } from './src/media/media-hub.js';
+export { FeishuChannel } from './src/channels/feishu-channel.js';
+export { WeChatChannel } from './src/channels/wechat-channel.js';
+export { DingTalkChannel } from './src/channels/dingtalk-channel.js';
+export { WeComChannel } from './src/channels/wecom-channel.js';
+export { QqChannel } from './src/channels/qq-channel.js';
+export { CliAgentRunner } from './src/agent-drivers/cli-runner.js';
+export { McpAgentServer } from './src/agent-drivers/mcp-server.js';
+export { WebhookAgentServer } from './src/agent-drivers/webhook-server.js';
+export { splitTextWithCodeFences, stripMarkdownToPlain } from './src/protocols/formatter.js';
+export { createInboundMessageEvent, createOutboundDeliveryPayload } from './src/protocols/types.js';

@@ -1,0 +1,44 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8080
+  },
+  "agent": {
+    "mode": "cli",
+    "binary": "claude",
+    "permissionLevel": "dontAsk",
+    "model": "claude-3-7-sonnet-20250219",
+    "webhookUrl": "http://127.0.0.1:5000/webhook",
+    "timeoutMs": 180000
+  },
+  "security": {
+    "allowlist": ["user_open_id_or_chat_id_here"]
+  },
+  "storage": {
+    "stateDir": "./data/state",
+    "mediaCacheDir": "./data/media"
+  },
+  "channels": {
+    "feishu": {
+      "appId": "cli_a1b2c3d4e5f6",
+      "appSecret": "your_feishu_app_secret"
+    },
+    "dingtalk": {
+      "clientId": "dingxxxxxxxxxxxx",
+      "clientSecret": "your_dingtalk_client_secret"
+    },
+    "wecom": {
+      "webhookKey": "your_wecom_bot_key_or_omit_for_app_mode",
+      "corpId": "wwxxxxxxxxxxxx",
+      "corpSecret": "your_wecom_corp_secret",
+      "agentId": 1000002
+    },
+    "qq": {
+      "appId": "102xxxxxx",
+      "clientSecret": "your_qq_bot_client_secret"
+    },
+    "wechat": {
+      "bridgeUrl": "http://127.0.0.1:3001"
+    }
+  }
+}

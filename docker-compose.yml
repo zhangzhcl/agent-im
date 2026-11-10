@@ -1,0 +1,12 @@
+services:
+  omni-im-gateway:
+    build: .
+    container_name: omni-im-gateway
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config.json:/app/config.json:ro
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
