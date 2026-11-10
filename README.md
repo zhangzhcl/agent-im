@@ -61,8 +61,6 @@
 
 ### 方式一：npm 全局安装（推荐）
 
-发布到 npm 后：
-
 ```bash
 npm install -g omni-im-gateway
 
@@ -76,10 +74,9 @@ omni-im-gateway mcp --config /path/to/config.json
 ### 方式二：npx 免安装运行
 
 ```bash
-# 已发布到 npm 后
 npx omni-im-gateway start --config /path/to/config.json
 
-# 也可以直接从 GitHub 源运行（无需发布）
+# 也可以直接从 GitHub 源运行
 npx github:zhangzhcl/agent-im start --config /path/to/config.json
 ```
 
